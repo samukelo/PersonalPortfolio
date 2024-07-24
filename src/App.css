@@ -13,12 +13,12 @@ body {
 a {
   text-decoration: none;
 }
+/* Container */
 .container {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .navbar,
 .navbar > .container {
@@ -190,7 +190,6 @@ a {
 }
 .icons li {
   list-style-type: none;
-  background: #b721ff;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -202,11 +201,9 @@ a {
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  margin-left: 30px;
 }
-.icons li:hover {
-  background: #edffec;
-  color: #000;
-}
+
 .about-right {
   background: #12192c;
   height: 100vh;
@@ -284,4 +281,85 @@ a {
     position: absolute;
     width: 80%;
   }
+}
+/*
+  |-----------------------------------
+  | End About Section   
+  |-----------------------------------
+  */
+/*
+  |-----------------------------------
+  | Start My Technologies
+  |-----------------------------------
+  */
+
+.technologieswrappersection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* Skills Section */
+.skills-section {
+  padding: 60px 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+  background-color: #b721ff;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 0;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  text-align: center;
+}
+
+.projects-section h2 {
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
 }

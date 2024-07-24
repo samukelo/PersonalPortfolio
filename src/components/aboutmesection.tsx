@@ -1,4 +1,9 @@
+import meimg from "../../public/me2.png";
 import imagelinkedin from "../../public/linkedin-original.svg";
+import discord from "../../public/discord-alt.svg";
+import github from "../../public/github.svg";
+import whatsapp from "../../public/whatsapp.svg";
+
 function AboutMe() {
   return (
     <div className="AboutMeSection">
@@ -8,10 +13,7 @@ function AboutMe() {
             <div>
               <div className="shadow">
                 <div className="about-img">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png"
-                    alt="about image"
-                  />
+                  <img src={meimg} alt="about image" />
                 </div>
               </div>
 
@@ -22,21 +24,39 @@ function AboutMe() {
             <ul className="icons">
               <li>
                 <a
-                  href="https://twitter.com"
+                  href="https://www.linkedin.com/in/samukelo-makofane-35a157a6/"
                   target="_blank"
-                  className="icon twitter"
+                  className="icon Linkedin"
                 >
                   <img src={imagelinkedin} alt="" />
                 </a>
               </li>
               <li>
-                <i className="fab fa-twitter"></i>
+                <a
+                  href="https://discord.com/user/635763521782546453"
+                  target="_blank"
+                  className="icon Discord"
+                >
+                  <img src={discord} alt="" />
+                </a>
               </li>
               <li>
-                <i className="fab fa-linkedin"></i>
+                <a
+                  href="https://github.com/samukelo"
+                  target="_blank"
+                  className="icon Github"
+                >
+                  <img src={github} alt="" />
+                </a>
               </li>
               <li>
-                <i className="fab fa-instagram"></i>
+                <a
+                  href="https://wa.me/qr/R6TJA7ZIUEPHJ1"
+                  target="_blank"
+                  className="icon Whatsapp"
+                >
+                  <img src={whatsapp} alt="" />
+                </a>
               </li>
             </ul>
           </div>
@@ -58,14 +78,17 @@ function AboutMe() {
 
           <div className="about-para">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              aspernatur possimus ullam quaerat, laboriosam ex voluptate aliquid
-              laborum, obcaecati ratione accusamus! Ea nisi modi dolor nam
-              numquam? Temporibus, molestias amet.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-              iure tempora alias laudantium sapiente impedit!
+              I am a skilled IT technician and software developer with a passion
+              for solving complex technical challenges. With a proven track
+              record in IT support and a strong foundation in software
+              development, I bring a blend of technical expertise and
+              problem-solving skills to every project. My commitment to staying
+              abreast of the latest industry trends ensures that I can deliver
+              innovative and effective solutions. I thrive in collaborative
+              environments. With a keen eye for detail and a dedication to
+              continuous improvement, I am poised to make meaningful
+              contributions to any IT technical support and software development
+              team.
             </p>
           </div>
         </div>

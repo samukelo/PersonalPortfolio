@@ -20,7 +20,7 @@ function NavBar() {
                 <a href="#">Technologies</a>
               </li>
               <li>
-                <a href="#">Experience</a>
+                <a href="#">My Projects</a>
               </li>
               <li>
                 <a href="#">GitHub Repos</a>
