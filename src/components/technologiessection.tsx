@@ -1,7 +1,7 @@
 function MyTechnologies() {
   return (
-    <div className="technologieswrappersection">
-      <div id="skills" className="skills-section">
+    <div id="skills" className="technologieswrappersection">
+      <div className="skills-section">
         <div className="container">
           <h2>Technologies I'm Farmiliar With</h2>
           <ul className="skills-list">

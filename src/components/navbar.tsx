@@ -17,13 +17,10 @@ function NavBar() {
                 <a href="#">About</a>
               </li>
               <li>
-                <a href="#">Technologies</a>
+                <a href="#skills">Technologies</a>
               </li>
               <li>
-                <a href="#">My Projects</a>
-              </li>
-              <li>
-                <a href="#">GitHub Repos</a>
+                <a href="#projects">My Projects</a>
               </li>
             </ul>
           </div>
