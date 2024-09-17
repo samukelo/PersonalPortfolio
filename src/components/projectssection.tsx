@@ -1,6 +1,7 @@
 import web1 from "../../public/web1.png";
 import web2 from "../../public/drone.png";
 import web3 from "../../public/animezone.png";
+import web4 from "../../public/weather.jpg";
 import github from "../../public/github.svg";
 import link from "../../public/link.svg";
 function ProjectSection() {
@@ -94,6 +95,33 @@ function ProjectSection() {
               </p>
             </div>
 
+            <div className="project-card">
+              <img src={web4} alt="Project 2" />
+              <h3>7 Day Weather Services</h3>
+              <p>A simple Wsay To get weather from an api or somewhere</p>
+              <p>
+                <ul className="icons">
+                  <li>
+                    <a
+                      href="https://weathe-eight.vercel.app/"
+                      target="_blank"
+                      className="icon Linkedin"
+                    >
+                      <img src={link} alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/samukelo/firstreact.git"
+                      target="_blank"
+                      className="icon Github"
+                    >
+                      <img src={github} alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </p>
+            </div>
         </div>
       </div>
     </div>
