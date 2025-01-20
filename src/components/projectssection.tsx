@@ -7,124 +7,139 @@ import link from "../../public/link.svg";
 function ProjectSection() {
   return (
     <>
-    <div id="projects" className="projects-section">
-      <div className="container">
-        <h2>My Projects</h2>
-        <div className="projects-grid">
-          <div className="project-card">
-            <img src={web1} alt="Project 1" />
-            <h3>Wakee.co.za</h3>
-            <p>A Simple way To Get A Service Or A callout Done </p>
-            <p>
-              <ul className="icons">
+      <div
+        id="projects"
+        className="projects-section py-16 bg-gradient-to-r from-blue-400 to-purple-600 text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-white mb-10">My Projects</h2>
+          <div className="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project 1 */}
+            <div className="project-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+              <img
+                src={web1}
+                alt="Project 1"
+                className="w-full rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-semibold text-white">Wakee.co.za</h3>
+              <p className="text-gray-300 mt-2">
+                A Simple way to get a service or a callout done
+              </p>
+              <ul className="icons flex justify-center gap-4 mt-4">
                 <li>
                   <a
                     href="https://www.wakee.co.za"
                     target="_blank"
-                    className="icon Linkedin"
-                  >
-                    <img src={link} alt="" />
+                    rel="noopener noreferrer">
+                    <img src={link} alt="Website Link" className="w-6 h-6" />
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://github.com/samukelo"
                     target="_blank"
-                    className="icon Github"
-                  >
-                    <img src={github} alt="" />
+                    rel="noopener noreferrer">
+                    <img src={github} alt="GitHub Link" className="w-6 h-6" />
                   </a>
                 </li>
               </ul>
-            </p>
-          </div>
+            </div>
 
-          <div className="project-card">
-            <img src={web2} alt="Project 2" />
-            <h3>Dronoticz</h3>
-            <p>A simple Design from a Figma Mockup</p>
-            <p>
-              <ul className="icons">
+            {/* Project 2 */}
+            <div className="project-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+              <img
+                src={web2}
+                alt="Project 2"
+                className="w-full rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-semibold text-white">Dronoticz</h3>
+              <p className="text-gray-300 mt-2">
+                A simple design from a Figma mockup
+              </p>
+              <ul className="icons flex justify-center gap-4 mt-4">
                 <li>
                   <a
                     href="https://firstassignment-bvd2h0ajt-samukelo-makofanes-projects.vercel.app/"
                     target="_blank"
-                    className="icon Linkedin"
-                  >
-                    <img src={link} alt="" />
+                    rel="noopener noreferrer">
+                    <img src={link} alt="Website Link" className="w-6 h-6" />
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://github.com/samukelo/firstreact.git"
                     target="_blank"
-                    className="icon Github"
-                  >
-                    <img src={github} alt="" />
+                    rel="noopener noreferrer">
+                    <img src={github} alt="GitHub Link" className="w-6 h-6" />
                   </a>
                 </li>
               </ul>
-            </p>
+            </div>
+            {/* Project 1 */}
+            <div className="project-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+              <img
+                src={web3}
+                alt="Project 1"
+                className="w-full rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-semibold text-white">
+                Anime Zone Movie Site
+              </h3>
+              <p className="text-gray-300 mt-2">Anime Zone Movie Site</p>
+              <ul className="icons flex justify-center gap-4 mt-4">
+                <li>
+                  <a
+                    href="https://www.wakee.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={link} alt="Website Link" className="w-6 h-6" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/samukelo"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={github} alt="GitHub Link" className="w-6 h-6" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Project 2 */}
+            <div className="project-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+              <img
+                src={web4}
+                alt="Project 2"
+                className="w-full rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-semibold text-white">
+                7 Day Weather Services
+              </h3>
+              <p className="text-gray-300 mt-2">
+                A simple Wsay To get weather from an api or somewhere
+              </p>
+              <ul className="icons flex justify-center gap-4 mt-4">
+                <li>
+                  <a
+                    href="https://firstassignment-bvd2h0ajt-samukelo-makofanes-projects.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={link} alt="Website Link" className="w-6 h-6" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/samukelo/firstreact.git"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={github} alt="GitHub Link" className="w-6 h-6" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-            <div className="project-card">
-              <img src={web3} alt="Project 2" />
-              <h3>Anime Zone Movie Site</h3>
-              <p>A simple Movie And Series Site That Saves Data to  a certain folder / file (.json) But I Used State</p>
-              <p>
-                <ul className="icons">
-                  <li>
-                    <a
-                      href="https://movie-series-site.vercel.app/"
-                      target="_blank"
-                      className="icon Linkedin"
-                    >
-                      <img src={link} alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/samukelo/firstreact.git"
-                      target="_blank"
-                      className="icon Github"
-                    >
-                      <img src={github} alt="" />
-                    </a>
-                  </li>
-                </ul>
-              </p>
-            </div>
-
-            <div className="project-card">
-              <img src={web4} alt="Project 2" />
-              <h3>7 Day Weather Services</h3>
-              <p>A simple Wsay To get weather from an api or somewhere</p>
-              <p>
-                <ul className="icons">
-                  <li>
-                    <a
-                      href="https://weathe-eight.vercel.app/"
-                      target="_blank"
-                      className="icon Linkedin"
-                    >
-                      <img src={link} alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/samukelo/firstreact.git"
-                      target="_blank"
-                      className="icon Github"
-                    >
-                      <img src={github} alt="" />
-                    </a>
-                  </li>
-                </ul>
-              </p>
-            </div>
         </div>
       </div>
-    </div>
     </>
   );
 }

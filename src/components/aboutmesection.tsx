@@ -6,92 +6,70 @@ import whatsapp from "../../public/whatsapp.svg";
 
 function AboutMe() {
   return (
-    <div className="AboutMeSection">
-      <div className="about-wrapper">
-        <div className="about-left">
-          <div className="about-left-content">
-            <div>
-              <div className="shadow">
-                <div className="about-img">
-                  <img src={meimg} alt="about image" />
-                </div>
-              </div>
-
-              <h2>Samukelo Worthwhile Makofane</h2>
-              <h3>FullStack Developer</h3>
-            </div>
-
-            <ul className="icons">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/samukelo-makofane-35a157a6/"
-                  target="_blank"
-                  className="icon Linkedin"
-                >
-                  <img src={imagelinkedin} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.com/user/635763521782546453"
-                  target="_blank"
-                  className="icon Discord"
-                >
-                  <img src={discord} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/samukelo"
-                  target="_blank"
-                  className="icon Github"
-                >
-                  <img src={github} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/qr/R6TJA7ZIUEPHJ1"
-                  target="_blank"
-                  className="icon Whatsapp"
-                >
-                  <img src={whatsapp} alt="" />
-                </a>
-              </li>
-            </ul>
+    <div className="h-screen flex flex-col lg:grid lg:grid-cols-2">
+      {/* Left Section */}
+      <div className="bg-gradient-to-r from-blue-400 to-purple-700 flex flex-col items-center justify-center text-white">
+        <div className="bg-gray-900 p-10 rounded-t-lg text-center shadow-lg w-4/5">
+          <div className="mx-auto rounded-full overflow-hidden w-52 h-50 mb-6">
+            <img
+              src={meimg}
+              alt="about image"
+              className="w-full h-full object-cover"
+            />
           </div>
+          <h2 className="text-2xl font-bold mb-2">
+            Samukelo Worthwhile Makofane
+          </h2>
+          <h3 className="uppercase text-sm tracking-wider">
+            FullStack Developer
+          </h3>
         </div>
+        <ul className="bg-gray-900 flex justify-center py-3 rounded-b-lg w-4/5 mt-[-1rem]">
+          <li className="mx-2">
+            <a
+              href="https://www.linkedin.com/in/samukelo-makofane-35a157a6/"
+              target="_blank">
+              <img src={imagelinkedin} alt="LinkedIn" className="w-10 h-10" />
+            </a>
+          </li>
+          <li className="mx-2">
+            <a
+              href="https://discord.com/user/635763521782546453"
+              target="_blank">
+              <img src={discord} alt="Discord" className="w-10 h-10" />
+            </a>
+          </li>
+          <li className="mx-2">
+            <a href="https://github.com/samukelo" target="_blank">
+              <img src={github} alt="GitHub" className="w-10 h-10" />
+            </a>
+          </li>
+          <li className="mx-2">
+            <a href="https://wa.me/qr/R6TJA7ZIUEPHJ1" target="_blank">
+              <img src={whatsapp} alt="WhatsApp" className="w-10 h-10" />
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div className="about-right">
-          <h1>
-            Hello<span>!</span>
-          </h1>
-          <h2>Here's who I am & what I do</h2>
-          <div className="about-btns">
-            <button type="button" className="btn btn-pink">
-              resume / CV
-            </button>
-            <button type="button" className="btn btn-white">
-              Git hub
-            </button>
-          </div>
-
-          <div className="about-para">
-            <p>
-              I am a skilled IT technician and software developer with a passion
-              for solving complex technical challenges. With a proven track
-              record in IT support and a strong foundation in software
-              development, I bring a blend of technical expertise and
-              problem-solving skills to every project. My commitment to staying
-              abreast of the latest industry trends ensures that I can deliver
-              innovative and effective solutions. I thrive in collaborative
-              environments. With a keen eye for detail and a dedication to
-              continuous improvement, I am poised to make meaningful
-              contributions to any IT technical support and software development
-              team.
-            </p>
-          </div>
+      {/* Right Section */}
+      <div className="bg-gray-900 text-white flex flex-col justify-center items-center p-10 text-center">
+        <h1 className="text-5xl font-bold uppercase">
+          Hello<span className="text-purple-500">!</span>
+        </h1>
+        <h2 className="font-semibold mt-4">Here's who I am & what I do</h2>
+        <div className="flex space-x-4 mt-6">
+          <button className="px-5 py-2 border-2 border-white rounded-full hover:bg-purple-500 hover:border-purple-500 transition">
+            Resume / CV
+          </button>
+          <button className="px-5 py-2 border-2 border-white rounded-full bg-purple-500 hover:bg-transparent hover:border-white transition">
+            GitHub
+          </button>
         </div>
+        <p className="mt-6 opacity-80">
+          I am a skilled IT technician and software developer with a passion for
+          solving complex technical challenges...
+        </p>
       </div>
     </div>
   );
